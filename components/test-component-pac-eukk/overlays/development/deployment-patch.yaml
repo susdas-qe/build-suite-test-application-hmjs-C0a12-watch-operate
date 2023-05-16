@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-eukk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-hykc-tenant/build-suite-test-application-hmjs/test-component-pac-eukk@sha256:3fa5b5be9561e265b33079aa2e70612face4486c7f16d711a17d1c18fcf8dd3b
+        name: my-nginx
+        resources: {}
+status: {}
